@@ -11,5 +11,5 @@
 (fn [n a b]
   (let [f #(/ (*' %1 (inc %1) %2) 2)
         g #(quot (dec n) %)
-        r (*' a b)]
-    (- (+' (f (g a) a) (f (g b) b)) (f (g r) r))))
+        h #(f (g %) %)]
+    (- (+' (h a) (h b)) (h (*' a b)))))
