@@ -14,7 +14,3 @@
 
 (fn [n]
   (iterate #(mapv +' (conj % 0) (cons 0 %)) n))
-
-;; A Haskell equivalent
-;;
-;; iterate (\s -> zipWith (+) (0:s) (s++[0]))

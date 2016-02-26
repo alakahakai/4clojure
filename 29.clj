@@ -4,6 +4,3 @@
 ;; string containing only the capital letters.
 
 #(apply str (re-seq #"[A-Z]" %))
-
-;; In Haskell
-;; filter (`elem` ['A'..'Z'])

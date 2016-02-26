@@ -1,0 +1,1 @@
+iterate (\s -> zipWith (+) (0:s) (s++[0]))
